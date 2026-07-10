@@ -33,3 +33,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Personal Info & Resumes
+/PRATIKJADHAV_InternshalaResume*.pdf
+/Pratik-Vijay-Jadhav-FlowCV-Resume*.pdf
+/Pratik_Jadhav_resume.pdf
+/Pratik_Resume.pdf
+/resume.txt
