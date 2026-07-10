@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pratik Vijay Jadhav — ML Systems Engineer</title>
+  <meta name="description"
+    content="ML Systems Engineer specializing in vision systems and RAG/LLM applications. Building intelligent systems that see, understand, and act." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ─── NAVIGATION ─────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">PVJ<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ──────────────────────────────────────────────────── -->
+  <section id="hero">
+    <canvas id="neural-canvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow label-text">ML Systems Engineer</p>
+      <h1 class="hero-name">Pratik Vijay<br /><span class="grad-text">Jadhav</span></h1>
+      <p class="hero-role">
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-tagline">Building intelligent systems that <em>see</em>, <em>understand</em>, and <em>act</em>.</p>
+
+      <div class="stat-badges">
+        <div class="stat-badge">
+          <span class="stat-value grad-text">34% → 92%</span>
+          <span class="stat-label">Defect Detection Accuracy</span>
+        </div>
+        <div class="stat-badge">
+          <span class="stat-value grad-text">50k+</span>
+          <span class="stat-label">Profiles Indexed (RAG)</span>
+        </div>
+        <div class="stat-badge">
+          <span class="stat-value grad-text">1,000+</span>
+          <span class="stat-label">Concurrent Requests</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="mailto:pratik.ja3456@gmail.com" class="btn btn-outline">Get In Touch</a>
+      </div>
+
+      <div class="social-row">
+        <a href="https://linkedin.com/in/pratik-jadhav07" target="_blank" rel="noopener" class="social-icon"
+          aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+        <a href="https://github.com/PratikJadhav27" target="_blank" rel="noopener" class="social-icon"
+          aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+          </svg>
+        </a>
+        <a href="mailto:pratik.ja3456@gmail.com" class="social-icon" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <polyline points="22,4 12,13 2,4" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span class="label-text">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─────────────────────────────────────────────────── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="label-text section-label">Who I Am</p>
+        <h2 class="section-title grad-text">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm an <strong>ML Systems Engineer</strong> from Bangalore, passionate about building AI systems that
+            bridge the gap between cutting-edge research and real-world impact.</p>
+          <p>My core expertise spans <strong>computer vision</strong>, <strong>RAG/LLM applications</strong>, and
+            <strong>scalable backend systems</strong>. I've improved defect detection from 34% → 92%, built RAG
+            pipelines processing 50,000+ profiles, and architected distributed systems handling 1,000+ concurrent
+            requests.
+          </p>
+          <p>I hold a <strong>B.Tech in Computer Science (Digital Transformation)</strong> from Atria University with a
+            CGPA of 9.02, graduating in 2025. Currently expanding expertise with <strong>DSPy</strong> for LLM pipeline
+            optimization and low-latency inference architectures.</p>
+          <div class="about-tags">
+            <span class="tech-chip">Open to Opportunities</span>
+            <span class="tech-chip">Bangalore, India</span>
+            <span class="tech-chip">B.Tech CS — CGPA 9.02</span>
+          </div>
+        </div>
+        <div class="about-info-col">
+          <div class="glass-card info-card">
+            <div class="info-row">
+              <span class="info-icon">📧</span>
+              <div>
+                <p class="label-text info-label">Email</p>
+                <a href="mailto:pratik.ja3456@gmail.com" class="info-value">pratik.ja3456@gmail.com</a>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">📱</span>
+              <div>
+                <p class="label-text info-label">Phone</p>
+                <p class="info-value">+91 9021130978</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">📍</span>
+              <div>
+                <p class="label-text info-label">Location</p>
+                <p class="info-value">Bangalore, Karnataka</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">🎓</span>
+              <div>
+                <p class="label-text info-label">Degree</p>
+                <p class="info-value">B.Tech CS, Atria University</p>
+              </div>
+            </div>
+          </div>
+          <div class="impact-metrics">
+            <div class="metric-card glass-card">
+              <span class="metric-val grad-text">92%</span>
+              <span class="metric-desc">Defect Detection Accuracy</span>
+            </div>
+            <div class="metric-card glass-card">
+              <span class="metric-val grad-text">50k+</span>
+              <span class="metric-desc">Profiles Indexed (RAG)</span>
+            </div>
+            <div class="metric-card glass-card">
+              <span class="metric-val grad-text">1k+</span>
+              <span class="metric-desc">Concurrent API Requests</span>
+            </div>
+            <div class="metric-card glass-card">
+              <span class="metric-val grad-text">35%</span>
+              <span class="metric-desc">Retrieval Precision Boost</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ────────────────────────────────────────────────── -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <p class="label-text section-label">What I Know</p>
+        <h2 class="section-title grad-text">Technical Arsenal</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="glass-card skill-card skill-featured">
+          <div class="skill-card-header">
+            <span class="skill-icon">🧠</span>
+            <h3>Machine Learning / AI</h3>
+          </div>
+          <div class="chip-group">
+            <span class="tech-chip chip-primary">CNNs</span>
+            <span class="tech-chip chip-primary">Computer Vision</span>
+            <span class="tech-chip chip-primary">RAG Systems</span>
+            <span class="tech-chip chip-primary">LLM Systems</span>
+            <span class="tech-chip chip-primary">LangChain</span>
+            <span class="tech-chip chip-primary">DSPy</span>
+            <span class="tech-chip">Transformers</span>
+            <span class="tech-chip">Embeddings</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">⚙️</span>
+            <h3>ML Frameworks</h3>
+          </div>
+          <div class="chip-group">
+            <span class="tech-chip">TensorFlow</span>
+            <span class="tech-chip">Scikit-learn</span>
+            <span class="tech-chip">Hugging Face</span>
+            <span class="tech-chip">Keras</span>
+            <span class="tech-chip">OpenCV</span>
+            <span class="tech-chip">NumPy</span>
+            <span class="tech-chip">Pandas</span>
+            <span class="tech-chip">Matplotlib</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">🔌</span>
+            <h3>Backend &amp; APIs</h3>
+          </div>
+          <div class="chip-group">
+            <span class="tech-chip chip-secondary">FastAPI</span>
+            <span class="tech-chip">REST APIs</span>
+            <span class="tech-chip">WebSockets</span>
+            <span class="tech-chip">Celery</span>
+            <span class="tech-chip">RabbitMQ</span>
+            <span class="tech-chip">Flask</span>
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">SQL</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">🗄️</span>
+            <h3>Databases &amp; Vector Search</h3>
+          </div>
+          <div class="chip-group">
+            <span class="tech-chip">MongoDB</span>
+            <span class="tech-chip">PostgreSQL</span>
+            <span class="tech-chip chip-secondary">FAISS</span>
+            <span class="tech-chip">MySQL</span>
+            <span class="tech-chip">Redis</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">☁️</span>
+            <h3>Infrastructure &amp; DevOps</h3>
+          </div>
+          <div class="chip-group">
+            <span class="tech-chip">Docker</span>
+            <span class="tech-chip">TensorFlow Serving</span>
+            <span class="tech-chip">Vertex AI</span>
+            <span class="tech-chip">MLflow</span>
+            <span class="tech-chip">AWS</span>
+            <span class="tech-chip">Git / GitHub</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">🕷️</span>
+            <h3>Data Engineering</h3>
+          </div>
+          <div class="chip-group">
+            <span class="tech-chip">Selenium</span>
+            <span class="tech-chip">Crawl4AI</span>
+            <span class="tech-chip">Beautiful Soup</span>
+            <span class="tech-chip">Data Pipelines</span>
+            <span class="tech-chip">Streamlit</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="languages-row">
+        <p class="label-text section-label" style="margin-bottom:1rem">Languages</p>
+        <div class="lang-bars">
+          <div class="lang-item">
+            <span class="lang-name">Python</span>
+            <div class="lang-bar">
+              <div class="lang-fill" style="width:95%"></div>
+            </div>
+            <span class="lang-level">Expert</span>
+          </div>
+          <div class="lang-item">
+            <span class="lang-name">SQL</span>
+            <div class="lang-bar">
+              <div class="lang-fill" style="width:80%"></div>
+            </div>
+            <span class="lang-level">Advanced</span>
+          </div>
+          <div class="lang-item">
+            <span class="lang-name">R</span>
+            <div class="lang-bar">
+              <div class="lang-fill" style="width:55%"></div>
+            </div>
+            <span class="lang-level">Intermediate</span>
+          </div>
+          <div class="lang-item">
+            <span class="lang-name">Java</span>
+            <div class="lang-bar">
+              <div class="lang-fill" style="width:40%"></div>
+            </div>
+            <span class="lang-level">Basic</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ────────────────────────────────────────────── -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="label-text section-label">Career Journey</p>
+        <h2 class="section-title grad-text">Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot dot-primary"></div>
+          <div class="glass-card timeline-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-role">AI/ML Engineer</h3>
+                <p class="tl-company">Joshnik AI Labs</p>
+              </div>
+              <div class="tl-right">
+                <span class="badge badge-primary">Full Time</span>
+                <span class="tl-date label-text">Mar 2025 – Feb 2026</span>
+              </div>
+            </div>
+            <ul class="tl-bullets">
+              <li>Designed distributed async task processing system with <strong>FastAPI + RabbitMQ + Celery</strong>
+                handling 1,000+ concurrent requests</li>
+              <li>Built automated data extraction pipelines for <strong>30k+ real-estate listings</strong> using
+                Selenium and Crawl4AI</li>
+              <li>Led <strong>50k+ profile ingestion pipeline</strong> for LLM chatbot with FAISS vector search</li>
+              <li>Architected multi-tenant <strong>Razorpay payment system</strong> with encrypted storage &amp;
+                webhooks</li>
+              <li>Built real-time reservation system (<strong>&lt;100ms latency</strong>) with React + FastAPI
+                WebSockets</li>
+            </ul>
+            <div class="chip-group">
+              <span class="tech-chip">FastAPI</span><span class="tech-chip">RabbitMQ</span><span
+                class="tech-chip">Celery</span>
+              <span class="tech-chip">FAISS</span><span class="tech-chip">Docker</span><span
+                class="tech-chip">React</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot dot-secondary"></div>
+          <div class="glass-card timeline-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-role">Software Development Intern</h3>
+                <p class="tl-company">Alemeno Private Limited</p>
+              </div>
+              <div class="tl-right">
+                <span class="badge badge-secondary">Internship</span>
+                <span class="tl-date label-text">Apr 2024 – Oct 2024</span>
+              </div>
+            </div>
+            <ul class="tl-bullets">
+              <li>Deployed multimodal defect-detection system (CNN + LLM) for <strong>LCD quality control</strong></li>
+              <li>Improved accuracy from <strong>34% → 92%</strong>, reduced false positives by 60%</li>
+              <li>Scaled dataset to <strong>10,000+ images</strong> with automated contextual labeling</li>
+              <li>Deployed via Dockerized <strong>TensorFlow Serving on Vertex AI</strong> (&lt;200ms latency)</li>
+            </ul>
+            <div class="chip-group">
+              <span class="tech-chip">CNN</span><span class="tech-chip">LLM</span><span class="tech-chip">TF
+                Serving</span>
+              <span class="tech-chip">Vertex AI</span><span class="tech-chip">Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot dot-accent"></div>
+          <div class="glass-card timeline-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-role">AI Research Intern</h3>
+                <p class="tl-company">Atria University</p>
+              </div>
+              <div class="tl-right">
+                <span class="badge badge-accent">Research</span>
+                <span class="tl-date label-text">Aug 2023 – Feb 2024</span>
+              </div>
+            </div>
+            <ul class="tl-bullets">
+              <li>Developed <strong>Agricultural LLM assistant</strong> using RAG for smart farming guidance</li>
+              <li>Improved retrieval precision by <strong>35%</strong> using Llama-based judge model</li>
+            </ul>
+            <div class="chip-group">
+              <span class="tech-chip">RAG</span><span class="tech-chip">LangChain</span><span
+                class="tech-chip">LLM</span><span class="tech-chip">FAISS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot dot-muted"></div>
+          <div class="glass-card timeline-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-role">Machine Learning Intern</h3>
+                <p class="tl-company">Cheslab Private Limited</p>
+              </div>
+              <div class="tl-right">
+                <span class="badge badge-muted">Internship</span>
+                <span class="tl-date label-text">Apr 2023 – Jun 2023</span>
+              </div>
+            </div>
+            <ul class="tl-bullets">
+              <li>Curated and preprocessed <strong>150k-image dermatology dataset</strong></li>
+              <li>Built CNN classifier for <strong>8 skin condition categories</strong> (74% accuracy)</li>
+            </ul>
+            <div class="chip-group">
+              <span class="tech-chip">CNN</span><span class="tech-chip">TensorFlow</span><span
+                class="tech-chip">OpenCV</span><span class="tech-chip">Python</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ──────────────────────────────────────────────── -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <p class="label-text section-label">What I've Built</p>
+        <h2 class="section-title grad-text">Featured Projects</h2>
+      </div>
+
+      <div class="projects-featured">
+
+        <div class="glass-card project-card project-featured" data-category="vision">
+          <div class="project-top">
+            <span class="project-badge badge-primary">Computer Vision + LLM</span>
+            <span class="project-badge badge-sm badge-live">Production</span>
+          </div>
+          <h3 class="project-title">AI Defect Detection System</h3>
+          <p class="project-desc">Multimodal defect-detection assistant for LCD panels combining LLMs (Claude, GPT,
+            Gemini) with CNNs. Improved classification accuracy from 34% → 92% across 15+ defect types. Constructed
+            10,000+ image dataset with contextual labeling. Deployed on Vertex AI with &lt;200ms latency.</p>
+          <div class="project-stats">
+            <span class="stat-pill">92% Accuracy</span>
+            <span class="stat-pill">60% fewer false positives</span>
+            <span class="stat-pill">15+ defect categories</span>
+          </div>
+          <div class="chip-group">
+            <span class="tech-chip">CNN</span><span class="tech-chip">Claude API</span><span
+              class="tech-chip">GPT-4</span>
+            <span class="tech-chip">TF Serving</span><span class="tech-chip">Vertex AI</span><span
+              class="tech-chip">Docker</span>
+          </div>
+        </div>
+
+        <div class="glass-card project-card project-featured" data-category="rag">
+          <div class="project-top">
+            <span class="project-badge badge-secondary">RAG / LLM Systems</span>
+          </div>
+          <h3 class="project-title">Multi-Document RAG Conversational Agent</h3>
+          <p class="project-desc">Intelligent conversational AI for multi-PDF question answering using LangChain, Google
+            Gemini, and FAISS. Achieves &gt;85% citation coverage with a batch evaluation pipeline and low-latency
+            retrieval. Deployed as an interactive Streamlit app.</p>
+          <div class="project-stats">
+            <span class="stat-pill">&gt;85% citation coverage</span>
+            <span class="stat-pill">Multi-PDF support</span>
+          </div>
+          <div class="chip-group">
+            <span class="tech-chip">LangChain</span><span class="tech-chip">Google Gemini</span>
+            <span class="tech-chip">FAISS</span><span class="tech-chip">Streamlit</span><span
+              class="tech-chip">Python</span>
+          </div>
+        </div>
+
+        <div class="glass-card project-card project-featured" data-category="backend">
+          <div class="project-top">
+            <span class="project-badge badge-primary">LLM + Backend Systems</span>
+            <span class="project-badge badge-sm badge-live">Deployed</span>
+          </div>
+          <h3 class="project-title">Real-Time AI Recruitment Platform</h3>
+          <p class="project-desc">Ingested and indexed 50k+ profiles for an LLM chatbot with FAISS vector search.
+            Handles 1,000+ concurrent requests through a distributed FastAPI + RabbitMQ + Celery system. Real-time
+            booking with &lt;100ms latency using WebSockets.</p>
+          <div class="project-stats">
+            <span class="stat-pill">50k+ Profiles</span>
+            <span class="stat-pill">1,000+ concurrent requests</span>
+            <span class="stat-pill">&lt;100ms latency</span>
+          </div>
+          <div class="chip-group">
+            <span class="tech-chip">FastAPI</span><span class="tech-chip">RabbitMQ</span><span
+              class="tech-chip">FAISS</span>
+            <span class="tech-chip">MongoDB</span><span class="tech-chip">React</span><span
+              class="tech-chip">WebSockets</span>
+          </div>
+        </div>
+
+        <div class="glass-card project-card project-featured" data-category="vision">
+          <div class="project-top">
+            <span class="project-badge badge-accent">Computer Vision + Rec</span>
+          </div>
+          <h3 class="project-title">Facial Emotion Music Recommender</h3>
+          <p class="project-desc">Real-time facial emotion recognition system using CNN trained on FER-2013 dataset.
+            Achieves 85% accuracy across 7 emotions. Integrated with Spotify API to recommend music tracks based on
+            detected mood and launched as a Streamlit application.</p>
+          <div class="project-stats">
+            <span class="stat-pill">85% accuracy</span>
+            <span class="stat-pill">7 emotion classes</span>
+            <span class="stat-pill">Real-time inference</span>
+          </div>
+          <div class="chip-group">
+            <span class="tech-chip">CNN</span><span class="tech-chip">FER-2013</span><span class="tech-chip">Spotify
+              API</span>
+            <span class="tech-chip">OpenCV</span><span class="tech-chip">TensorFlow</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Secondary projects -->
+      <h3 class="sub-section-title label-text"
+        style="margin:3rem 0 1.5rem;text-transform:uppercase;letter-spacing:.08em;">More Projects</h3>
+      <div class="projects-secondary">
+
+        <div class="glass-card project-card-sm">
+          <h4>Intelligent Trip Duration Predictor</h4>
+          <p>ML model optimizing distance/weather/traffic features. Reduced RMSE from 600s → 450s.</p>
+          <div class="chip-group"><span class="tech-chip">ML</span><span class="tech-chip">Feature Engineering</span>
+          </div>
+        </div>
+        <div class="glass-card project-card-sm">
+          <h4>Agricultural LLM Assistant (RAG)</h4>
+          <p>Smart farming guidance chatbot. 35% retrieval precision improvement via Llama judge model.</p>
+          <div class="chip-group"><span class="tech-chip">RAG</span><span class="tech-chip">LangChain</span></div>
+        </div>
+        <div class="glass-card project-card-sm">
+          <h4>Crop Recommendation System</h4>
+          <p>Random Forest classifier for soil-based crop recommendation. 95% accuracy.</p>
+          <div class="chip-group"><span class="tech-chip">Random Forest</span><span
+              class="tech-chip">Scikit-learn</span></div>
+        </div>
+        <div class="glass-card project-card-sm">
+          <h4>Skin Disease Classifier</h4>
+          <p>CNN model on 150k dermatology images. 74% accuracy across 8 skin condition categories.</p>
+          <div class="chip-group"><span class="tech-chip">CNN</span><span class="tech-chip">TensorFlow</span></div>
+        </div>
+        <div class="glass-card project-card-sm">
+          <h4>Stock Market Predictor</h4>
+          <p>LSTM-based forecasting model for stock price prediction using historical market data.</p>
+          <div class="chip-group"><span class="tech-chip">LSTM</span><span class="tech-chip">Time Series</span></div>
+        </div>
+        <div class="glass-card project-card-sm">
+          <h4>Diabetes Prediction</h4>
+          <p>Classification model (Logistic Regression / SVM) on PIMA dataset. 80%+ accuracy.</p>
+          <div class="chip-group"><span class="tech-chip">SVM</span><span class="tech-chip">Scikit-learn</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EDUCATION ─────────────────────────────────────────────── -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="label-text section-label">Academic Background</p>
+        <h2 class="section-title grad-text">Education</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="glass-card edu-card edu-featured">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-details">
+            <h3>B.Tech in Computer Science<br /><span class="grad-text">(Digital Transformation)</span></h3>
+            <p class="edu-school">Atria University — Bangalore, Karnataka</p>
+            <p class="edu-years label-text">November 2021 – August 2025</p>
+            <div class="cgpa-badge">
+              <span class="label-text">CGPA</span>
+              <span class="cgpa-val grad-text">9.02 / 10</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-secondary">
+          <div class="glass-card edu-card-sm">
+            <span class="edu-sm-icon">📘</span>
+            <div>
+              <p class="edu-sm-title">Class XII — Maharashtra State Board</p>
+              <p class="edu-sm-score grad-text">75.17%</p>
+            </div>
+          </div>
+          <div class="glass-card edu-card-sm">
+            <span class="edu-sm-icon">📗</span>
+            <div>
+              <p class="edu-sm-title">Class X — Maharashtra State Board</p>
+              <p class="edu-sm-score grad-text">88.4%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────────────────── -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <p class="label-text section-label">Get In Touch</p>
+        <h2 class="section-title grad-text">Let's Build Something Together</h2>
+        <p class="section-desc">Open to full-time roles, research collaborations, and freelance ML projects.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-links">
+          <a href="mailto:pratik.ja3456@gmail.com" class="glass-card contact-card">
+            <span class="contact-icon">📧</span>
+            <div>
+              <p class="label-text">Email</p>
+              <p class="contact-val">pratik.ja3456@gmail.com</p>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/pratik-jadhav07" target="_blank" rel="noopener"
+            class="glass-card contact-card">
+            <span class="contact-icon">💼</span>
+            <div>
+              <p class="label-text">LinkedIn</p>
+              <p class="contact-val">linkedin.com/in/pratik-jadhav07</p>
+            </div>
+          </a>
+          <a href="https://github.com/PratikJadhav27" target="_blank" rel="noopener" class="glass-card contact-card">
+            <span class="contact-icon">🐙</span>
+            <div>
+              <p class="label-text">GitHub</p>
+              <p class="contact-val">github.com/PratikJadhav27</p>
+            </div>
+          </a>
+          <a href="tel:+919021130978" class="glass-card contact-card">
+            <span class="contact-icon">📱</span>
+            <div>
+              <p class="label-text">Phone</p>
+              <p class="contact-val">+91 9021130978</p>
+            </div>
+          </a>
+        </div>
+
+        <form class="glass-card contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name" class="label-text">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email" class="label-text">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject" class="label-text">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="message" class="label-text">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project or opportunity..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-name">Pratik Vijay Jadhav</p>
+      <p class="label-text footer-role">ML Systems Engineer · 2025</p>
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/pratik-jadhav07" target="_blank" rel="noopener"
+          aria-label="LinkedIn">LinkedIn</a>
+        <span>·</span>
+        <a href="https://github.com/PratikJadhav27" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <span>·</span>
+        <a href="mailto:pratik.ja3456@gmail.com" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
