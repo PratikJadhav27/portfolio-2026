@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 import { ArrowDown, Github, Linkedin, Mail, Download, ExternalLink, Cpu, Brain, Code2 } from 'lucide-react'
@@ -10,10 +10,10 @@ const Hero = () => {
 
   const roles = [
     'AI/ML Engineer',
-    'LLM Systems Builder',
+    'LLM Agent Builder',
     'Computer Vision Expert',
     'RAG & NLP Specialist',
-    'MLOps Engineer',
+    'LLMOps Engineer',
   ]
 
   useEffect(() => {
@@ -51,7 +51,7 @@ const Hero = () => {
 
   const stats = [
     { value: '92%', label: 'Defect Detection Accuracy', icon: <Cpu className="w-4 h-4" /> },
-    { value: '78%', label: 'LLM Latency Reduction', icon: <Brain className="w-4 h-4" /> },
+    { value: '77%', label: 'LLM Latency Reduction', icon: <Brain className="w-4 h-4" /> },
     { value: '4+', label: 'AI Roles & Internships', icon: <Code2 className="w-4 h-4" /> },
   ]
 
@@ -78,10 +78,8 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-dark-950">
-      {/* Animated grid background */}
       <div className="absolute inset-0 grid-bg opacity-50" />
 
-      {/* Glowing orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.15, 0.25, 0.15] }}
@@ -100,9 +98,7 @@ const Hero = () => {
         />
       </div>
 
-      {/* Main content */}
       <div className="relative z-10 container-max section-padding text-center py-32">
-        {/* Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -111,11 +107,10 @@ const Hero = () => {
         >
           <span className="section-tag">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            Open to opportunities · Pune, Maharashtra
+            Open to opportunities &nbsp;&#183;&nbsp; Pune, Maharashtra
           </span>
         </motion.div>
 
-        {/* Name */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -127,7 +122,6 @@ const Hero = () => {
           <span className="gradient-text">Jadhav</span>
         </motion.h1>
 
-        {/* Typing animation role */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -138,19 +132,17 @@ const Hero = () => {
           <span className="animate-pulse text-primary-400">|</span>
         </motion.div>
 
-        {/* Description */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
           className="text-dark-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Building <span className="text-primary-400 font-medium">production-ready AI systems</span> — LLM pipelines,
-          computer vision, distributed ML backends. B.Tech CS @ Atria University{' '}
-          <span className="text-accent-400 font-medium">(CGPA: 9.02/10.0)</span>.
+          Building <span className="text-primary-400 font-medium">production-ready AI systems</span> — LLM agents,
+          multimodal AI, distributed ML backends. B.Tech CS @ Atria University{' '}
+          <span className="text-accent-400 font-medium">(CGPA: 8.53/10.0)</span>.
         </motion.p>
 
-        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -181,7 +173,6 @@ const Hero = () => {
           </motion.a>
         </motion.div>
 
-        {/* Social links */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -205,7 +196,6 @@ const Hero = () => {
           ))}
         </motion.div>
 
-        {/* Stats */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -230,7 +220,6 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
       <motion.a
         href="#about"
         initial={{ opacity: 0 }}

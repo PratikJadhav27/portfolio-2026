@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 import { Wrench } from 'lucide-react'
@@ -6,31 +6,25 @@ import { Wrench } from 'lucide-react'
 const Skills = () => {
   const skillCategories = [
     {
-      title: '🧠 AI / ML',
+      title: 'AI / ML',
       color: 'border-primary-500/40 bg-primary-500/5',
       titleColor: 'text-primary-400',
-      skills: ['LLMs', 'RAG', 'Transformers', 'CNNs', 'PyTorch', 'TensorFlow', 'Scikit-learn', 'Hugging Face', 'DSPy', 'LangGraph'],
+      skills: ['LLMs', 'RAG', 'DSPy', 'LangChain', 'LangGraph', 'Hugging Face', 'PyTorch', 'TensorFlow', 'Scikit-learn', 'CNNs', 'NLP', 'Computer Vision', 'LoRA'],
     },
     {
-      title: '⚙️ Backend',
+      title: 'Backend & Data',
       color: 'border-accent-500/40 bg-accent-500/5',
       titleColor: 'text-accent-400',
-      skills: ['FastAPI', 'REST APIs', 'WebSockets', 'Celery', 'RabbitMQ', 'Redis', 'Async Python'],
+      skills: ['FastAPI', 'REST APIs', 'Async Python', 'WebSockets', 'Celery', 'RabbitMQ', 'Redis', 'PostgreSQL', 'MongoDB', 'MySQL', 'FAISS', 'BM25', 'Qdrant'],
     },
     {
-      title: '🗄️ Retrieval & Databases',
-      color: 'border-secondary-500/40 bg-secondary-500/5',
-      titleColor: 'text-secondary-400',
-      skills: ['FAISS', 'BM25', 'PostgreSQL', 'MongoDB', 'MySQL'],
-    },
-    {
-      title: '☁️ Cloud & MLOps',
+      title: 'MLOps & Cloud',
       color: 'border-green-500/40 bg-green-500/5',
       titleColor: 'text-green-400',
-      skills: ['Docker', 'MLflow', 'Vertex AI', 'TensorFlow Serving', 'GitHub Actions'],
+      skills: ['MLflow', 'Langfuse', 'Prometheus', 'Grafana', 'Vertex AI', 'Docker', 'TensorFlow Serving', 'GitHub Actions'],
     },
     {
-      title: '💻 Languages',
+      title: 'Languages',
       color: 'border-orange-500/40 bg-orange-500/5',
       titleColor: 'text-orange-400',
       skills: ['Python', 'SQL'],
@@ -39,13 +33,13 @@ const Skills = () => {
 
   const topSkills = [
     { name: 'Python (Async)', level: 95 },
-    { name: 'LLMs & RAG', level: 92 },
+    { name: 'LLMs & RAG', level: 93 },
+    { name: 'DSPy / LangGraph / LangChain', level: 88 },
     { name: 'PyTorch / TensorFlow', level: 90 },
     { name: 'FastAPI', level: 92 },
-    { name: 'Vector Search & Retrieval', level: 88 },
-    { name: 'DSPy / LangGraph', level: 85 },
-    { name: 'Docker & MLOps', level: 85 },
-    { name: 'SQL', level: 88 },
+    { name: 'Vector Search & Retrieval', level: 90 },
+    { name: 'MLflow / Langfuse / LLMOps', level: 85 },
+    { name: 'Docker & Cloud (GCP/Vertex AI)', level: 85 },
   ]
 
   return (
@@ -75,7 +69,6 @@ const Skills = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
-          {/* Top skills with bars */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -110,7 +103,6 @@ const Skills = () => {
             </div>
           </motion.div>
 
-          {/* All skills by category */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}

@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 import { Calendar, MapPin, Building2, Briefcase } from 'lucide-react'
@@ -8,56 +8,56 @@ const Experience = () => {
     {
       title: 'AI/ML Engineer',
       company: 'Joshnik AI Labs',
-      location: 'Bangalore, India',
-      period: '03/2025 – Present',
+      location: 'Bengaluru, India',
+      period: '03/2025 - Present',
       type: 'Full-time',
       color: 'from-primary-500 to-primary-600',
       description: [
-        'Engineered a data pipeline to crawl, classify, and index 50K+ business profiles across 48 categories, improving classification coverage through hierarchical fallback routing.',
-        'Optimized a DSPy-powered fashion intelligence agent serving 16K+ brands by parallelizing retrieval, replacing LLM pre-filtering with regex ranking, and limiting retrieval context, reducing end-to-end latency from 18s to 4s (78%).',
-        'Developed an asynchronous real estate data platform where FastAPI orchestrates Celery workers via RabbitMQ to crawl listings, extract structured property data using LLMs, persist results to MongoDB, and stream processing status to a live dashboard.',
-        'Built an LLM-powered extraction pipeline using Crawl4AI and DSPy to convert raw HTML into structured property data, supporting multiple LLM providers through a unified inference interface.',
-        'Architected multi-tenant marketplace infrastructure integrating payments, real-time slot reservations, and meeting scheduling for consumer and professional workflows.'
+        'Optimized a brand-intelligence agent serving 16K+ brands, reducing latency 77% (18s to 4.2s) through parallel retrieval, deterministic ranking, context reduction, and MLflow evaluation.',
+        'Architected a multimodal AI platform for a 6,000+ participant event, combining a DSPy/ReAct campaign agent with MTCNN + InceptionResnetV1 face search and WebSocket streaming across ~10K faces/campaign.',
+        'Engineered an AI professional-discovery workflow combining LLM reasoning, Sentence Transformer embeddings, and retrieval across 50K+ profiles, 48 categories, and 27 locations.',
+        'Established production LLMOps with DSPy, MLflow, Prometheus, and Redis Streams for evaluation, tracing, telemetry, and ReAct/tool-calling workflows.',
+        'Productionized restaurant GenAI workflows using Claude 3.5 Sonnet for menu generation, consent drafting, deterministic routing, schema validation, AI image generation, and human-review gates across live venues.',
       ],
-      technologies: ['FastAPI', 'DSPy', 'Celery', 'RabbitMQ', 'MongoDB', 'Crawl4AI', 'LLMs', 'Regex', 'Data Pipelines'],
+      technologies: ['DSPy', 'LangGraph', 'MLflow', 'Langfuse', 'Prometheus', 'FastAPI', 'Redis Streams', 'MTCNN', 'WebSockets', 'Claude 3.5 Sonnet'],
     },
     {
       title: 'Machine Learning Intern',
       company: 'Alemeno Private Limited',
       location: 'Mumbai, India',
-      period: '04/2024 – 10/2024',
+      period: '04/2024 - 10/2024',
       type: 'Internship',
       color: 'from-accent-500 to-accent-600',
       description: [
-        'Developed an LCD defect detection system covering 17 defect classes using an ensemble of CNN and LLM models, improving production accuracy from 34% to 92% while reducing false positives.',
-        'Constructed and manually annotated a 10K+ image dataset with bounding-box labels, enabling training of production-grade defect detection models deployed via Vertex AI and Dockerized TensorFlow Serving.',
-        'Improved difficult-class detection accuracy from 54% to 81% through targeted hard-negative mining and iterative model retraining.'
+        'Engineered a hybrid vision-LLM LCD defect detection system across 17 defect classes, combining LLM prompting, CNNs, object detection, and preprocessing to improve accuracy from 34% to 92%.',
+        'Curated 10K+ annotations and built preprocessing and hard-negative mining pipelines, improving difficult-class detection from 54% to 81% while training models on Vertex AI.',
+        'Engineered a satellite ship-detection pipeline across 42K+ SAR/EO images using RF-DETR, image tiling, automated annotation, COCO conversion, and resumable batch processing.',
       ],
-      technologies: ['Python', 'TensorFlow', 'Vertex AI', 'Docker', 'TensorFlow Serving', 'CNNs', 'LLMs', 'Computer Vision'],
+      technologies: ['Python', 'TensorFlow', 'Vertex AI', 'Docker', 'RF-DETR', 'CNNs', 'LLMs', 'Computer Vision', 'Hard-negative Mining'],
     },
     {
       title: 'Applied AI Intern',
       company: 'Atria University',
-      location: 'Bangalore, India',
-      period: '08/2023 – 03/2024',
+      location: 'Bengaluru, India',
+      period: '08/2023 - 03/2024',
       type: 'Internship',
       color: 'from-secondary-500 to-secondary-600',
       description: [
-        'Designed an LLM-as-a-Judge evaluation framework for a RAG-based agricultural assistant, improving retrieval precision by 25–35% while reducing hallucinations through retrieval and prompt optimization.'
+        'Built a RAG-based agricultural assistant using large-scale document retrieval, RAG/RAFT experimentation, and a custom LLM-as-a-Judge evaluation framework, improving retrieval precision 25-35% while reducing hallucinations.',
       ],
-      technologies: ['LLaMA', 'RAG', 'Prompt Engineering', 'LLM Evaluation', 'NLP'],
+      technologies: ['LLaMA', 'RAG', 'RAFT', 'LLM-as-a-Judge', 'Prompt Engineering', 'NLP'],
     },
     {
       title: 'Machine Learning Intern',
       company: 'Cheslab Private Limited',
-      location: 'Bangalore, India',
-      period: '04/2023 – 06/2023',
+      location: 'Bengaluru, India',
+      period: '04/2023 - 06/2023',
       type: 'Internship',
       color: 'from-green-500 to-emerald-600',
       description: [
-        'Developed a CNN-based skin disease classifier across 12 disease categories using 100K+ images, leading the end-to-end data pipeline and integrating the model into a production diagnosis workflow.'
+        'Developed CNN-based skin disease classification pipelines using 100K+ medical images, contributing to dataset engineering, preprocessing, class balancing, model training, and healthcare AI application integration.',
       ],
-      technologies: ['Python', 'TensorFlow', 'CNN', 'Data Processing', 'Computer Vision'],
+      technologies: ['Python', 'TensorFlow', 'CNN', 'Data Engineering', 'Computer Vision'],
     },
   ]
 
@@ -88,7 +88,6 @@ const Experience = () => {
         </motion.div>
 
         <div className="max-w-4xl mx-auto relative">
-          {/* Timeline line */}
           <div className="absolute left-6 top-6 bottom-6 w-px bg-gradient-to-b from-primary-500/50 via-accent-500/30 to-transparent hidden md:block" />
 
           {experiences.map((exp, index) => (
@@ -100,12 +99,10 @@ const Experience = () => {
               viewport={{ once: true }}
               className="relative mb-8 last:mb-0"
             >
-              {/* Timeline dot */}
               <div className={`absolute left-3.5 top-6 w-5 h-5 rounded-full bg-gradient-to-br ${exp.color} border-2 border-dark-950 shadow-lg hidden md:flex items-center justify-center z-10`} />
 
               <div className="md:ml-16">
                 <div className="card group hover:border-white/10 transition-all duration-300">
-                  {/* Header */}
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-5">
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-1">
@@ -133,7 +130,6 @@ const Experience = () => {
                     </div>
                   </div>
 
-                  {/* Description */}
                   <ul className="space-y-3 mb-5">
                     {exp.description.map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-dark-300 text-sm leading-relaxed">
@@ -143,7 +139,6 @@ const Experience = () => {
                     ))}
                   </ul>
 
-                  {/* Tech stack */}
                   <div className="flex flex-wrap gap-2">
                     {exp.technologies.map((tech, i) => (
                       <span key={i} className="tech-pill">{tech}</span>
