@@ -1,7 +1,8 @@
-'use client'
+﻿'use client'
 
+import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { Github, Linkedin, Mail, Zap, ArrowUp } from 'lucide-react'
+import { Github, Linkedin, Mail, ArrowUp } from 'lucide-react'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -39,23 +40,28 @@ const Footer = () => {
 
   return (
     <footer className="bg-dark-950 border-t border-white/5 relative overflow-hidden">
-      {/* Subtle gradient */}
       <div className="absolute inset-0 bg-gradient-to-t from-dark-950 to-transparent" />
 
       <div className="relative z-10 container-max section-padding py-12">
         <div className="grid md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center">
-                <Zap className="w-4 h-4 text-white" />
+            <div className="flex items-center gap-2.5 mb-4">
+              <div className="w-8 h-8 rounded-xl overflow-hidden ring-1 ring-white/10">
+                <Image
+                  src="/logo.jpg"
+                  alt="Pratik Jadhav Logo"
+                  width={32}
+                  height={32}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <span className="font-heading font-bold text-white text-lg">
                 Pratik<span className="gradient-text">.</span>
               </span>
             </div>
             <p className="text-dark-400 text-sm leading-relaxed mb-5">
-              Machine Learning Engineer building production-ready AI systems — Computer Vision, LLMs, NLP, and MLOps.
+              AI/ML Engineer building production-ready LLM agents, multimodal AI systems, and evaluation/observability infrastructure.
             </p>
             <div className="flex gap-2">
               {socialLinks.map((social) => (
@@ -115,7 +121,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 mt-2 text-primary-400 hover:text-primary-300 font-medium text-xs transition-colors"
               >
-                📄 Download Resume
+                Download Resume
               </a>
             </div>
           </div>
@@ -124,10 +130,10 @@ const Footer = () => {
         {/* Divider */}
         <div className="border-t border-white/5 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-dark-500 text-xs">
-            © {currentYear} Pratik Vijay Jadhav. All rights reserved.
+            &copy; {currentYear} Pratik Vijay Jadhav. All rights reserved.
           </p>
           <p className="text-dark-500 text-xs">
-            Built with Next.js · TailwindCSS · Framer Motion
+            Built with Next.js &middot; TailwindCSS &middot; Framer Motion
           </p>
           <motion.a
             href="#home"

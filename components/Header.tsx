@@ -1,8 +1,9 @@
-'use client'
+﻿'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Download, Zap } from 'lucide-react'
+import { Menu, X, Download } from 'lucide-react'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -23,7 +24,6 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
 
-      // Track active section
       const sections = navLinks.map(link => link.id)
       for (const section of sections.reverse()) {
         const el = document.getElementById(section)
@@ -56,11 +56,18 @@ const Header = () => {
         {/* Logo */}
         <motion.a
           href="#home"
-          className="flex items-center gap-2 group"
+          className="flex items-center gap-2.5 group"
           whileHover={{ scale: 1.05 }}
         >
-          <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center shadow-lg shadow-primary-500/25">
-            <Zap className="w-5 h-5 text-white" />
+          <div className="w-9 h-9 rounded-xl overflow-hidden shadow-lg shadow-primary-500/25 ring-1 ring-white/10 group-hover:ring-primary-500/40 transition-all duration-300">
+            <Image
+              src="/logo.jpg"
+              alt="Pratik Jadhav Logo"
+              width={36}
+              height={36}
+              className="w-full h-full object-cover"
+              priority
+            />
           </div>
           <span className="font-heading font-bold text-white text-lg">
             Pratik<span className="gradient-text">.</span>
