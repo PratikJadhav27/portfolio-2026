@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 import { Brain, Layers, Server, TrendingUp, Cpu, Database } from 'lucide-react'
@@ -7,43 +7,42 @@ const About = () => {
   const highlights = [
     {
       icon: <Brain className="w-6 h-6" />,
-      title: 'LLMs & Generative AI',
-      description: 'Building RAG pipelines, agents with DSPy/LangGraph, and fine-tuning with LoRA',
+      title: 'LLM Agents & GenAI',
+      description: 'Building production LLM agents with DSPy/LangGraph, evaluation/observability, and ReAct/tool-calling workflows',
       color: 'from-primary-500 to-primary-600',
       glow: 'shadow-primary-500/20',
     },
     {
       icon: <Server className="w-6 h-6" />,
       title: 'Distributed AI Backends',
-      description: 'FastAPI, Celery, RabbitMQ, Redis for async processing and high-throughput pipelines',
+      description: 'FastAPI, Celery, RabbitMQ, Redis Streams — async, high-throughput AI pipelines with WebSocket streaming',
       color: 'from-accent-500 to-accent-600',
       glow: 'shadow-accent-500/20',
     },
     {
       icon: <Cpu className="w-6 h-6" />,
-      title: 'Computer Vision',
-      description: 'Designing CNNs, object detection, and multi-modal models for manufacturing & healthcare',
+      title: 'Multimodal & Computer Vision',
+      description: 'MTCNN, InceptionResnetV1, RF-DETR, hybrid vision-LLM systems for manufacturing, events & satellite imagery',
       color: 'from-secondary-500 to-secondary-600',
       glow: 'shadow-secondary-500/20',
     },
     {
       icon: <Layers className="w-6 h-6" />,
-      title: 'MLOps & Deployment',
-      description: 'Docker, MLflow, Vertex AI, and TensorFlow Serving for production scale',
+      title: 'LLMOps & MLOps',
+      description: 'MLflow, Langfuse, Prometheus, Grafana, Docker, Vertex AI — evaluation, tracing, and telemetry at scale',
       color: 'from-green-500 to-emerald-600',
       glow: 'shadow-green-500/20',
     },
   ]
 
   const metrics = [
-    { icon: <TrendingUp className="w-5 h-5" />, value: '78%', label: 'Latency reduction in production LLM pipeline (18s to 4s)' },
-    { icon: <TrendingUp className="w-5 h-5" />, value: '34% → 92%', label: 'Accuracy improvement in manufacturing defect detection' },
-    { icon: <Database className="w-5 h-5" />, value: '50K+', label: 'Business profiles crawled, classified, and indexed' },
+    { icon: <TrendingUp className="w-5 h-5" />, value: '77%', label: 'Agent latency reduced (18s to 4.2s) in production LLM pipeline' },
+    { icon: <TrendingUp className="w-5 h-5" />, value: '34% to 92%', label: 'Accuracy improvement in computer-vision defect detection' },
+    { icon: <Database className="w-5 h-5" />, value: '50K+', label: 'Profiles in AI professional-discovery retrieval system' },
   ]
 
   return (
     <section id="about" className="py-24 bg-dark-900 relative overflow-hidden">
-      {/* Background elements */}
       <div className="absolute inset-0 grid-bg opacity-30" />
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary-600/5 rounded-full blur-3xl" />
 
@@ -61,15 +60,14 @@ const About = () => {
           </span>
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
             Building Production
-            <span className="gradient-text"> ML Systems</span>
+            <span className="gradient-text"> AI Systems</span>
           </h2>
           <p className="text-dark-400 text-lg max-w-2xl mx-auto">
-            AI/ML Engineer with hands-on experience building production ML systems, LLM applications, and distributed AI backends.
+            AI/ML Engineer building production LLM agents, multimodal AI systems, and evaluation/observability infrastructure.
           </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          {/* Story */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -79,24 +77,23 @@ const About = () => {
             <h3 className="font-heading text-2xl font-bold text-white mb-6">Professional Summary</h3>
             <div className="space-y-4 text-dark-300 leading-relaxed">
               <p>
-                I am an <span className="text-primary-400 font-semibold">AI/ML Engineer</span> experienced in designing and deploying 
-                AI systems across computer vision and generative AI. Currently finishing my B.Tech in Computer Science at Atria University 
-                <span className="text-accent-400 font-semibold"> (9.02 CGPA)</span>.
+                I am an <span className="text-primary-400 font-semibold">AI/ML Engineer</span> specialising in production
+                LLM agents, multimodal AI systems, and evaluation/observability infrastructure. I have shipped
+                production AI services with <span className="text-secondary-400 font-semibold">FastAPI, Docker, GCP/Vertex AI, and MLflow</span>.
               </p>
               <p>
-                My expertise lies in <span className="text-secondary-400 font-semibold">end-to-end system architecture</span> — 
-                from fine-tuning models (Transformers, CNNs, LLaMA) and optimizing retrieval pipelines (RAG, FAISS, BM25) to building 
-                the distributed backends (FastAPI, Celery, RabbitMQ) that serve them in production.
+                My expertise spans <span className="text-accent-400 font-semibold">end-to-end AI system architecture</span> —
+                from fine-tuning models with LoRA/PEFT and building hybrid RAG pipelines (FAISS, BM25, Qdrant, cross-encoder
+                reranking) to establishing LLMOps stacks with DSPy, Langfuse, Prometheus, and Redis Streams.
               </p>
               <p>
-                I thrive on solving hard engineering problems, whether it's reducing inference latency by 
-                <span className="text-green-400 font-semibold"> 78%</span> in a production LLM agent or improving defect detection 
-                accuracy from <span className="text-green-400 font-semibold"> 34% to 92%</span> through targeted hard-negative mining 
-                and ensemble modeling.
+                I thrive on hard engineering challenges, whether reducing agent latency by{' '}
+                <span className="text-green-400 font-semibold">77%</span> through parallel retrieval and deterministic
+                ranking, or improving defect detection from{' '}
+                <span className="text-green-400 font-semibold">34% to 92%</span> with a hybrid vision-LLM ensemble.
               </p>
             </div>
 
-            {/* Metrics */}
             <div className="mt-8 space-y-3">
               {metrics.map((metric, i) => (
                 <motion.div
@@ -119,7 +116,6 @@ const About = () => {
             </div>
           </motion.div>
 
-          {/* Highlight cards */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}

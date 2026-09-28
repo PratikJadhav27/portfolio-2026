@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 import { GraduationCap, Calendar, MapPin, Award } from 'lucide-react'
@@ -9,9 +9,9 @@ const Education = () => {
       degree: 'B.Tech in Computer Science',
       specialization: 'Digital Transformation',
       university: 'Atria University',
-      location: 'Bangalore, India',
-      period: '11/2021 – 08/2025',
-      grade: 'CGPA: 9.02 / 10.0',
+      location: 'Bengaluru, India',
+      period: '11/2021 - 08/2025',
+      grade: 'CGPA: 8.53 / 10.0',
       coursework: [
         'Machine Learning',
         'Deep Learning',
@@ -94,7 +94,6 @@ const Education = () => {
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
-          {/* Degrees */}
           <div className="space-y-6 mb-12">
             {education.map((edu, index) => (
               <motion.div
@@ -108,7 +107,6 @@ const Education = () => {
                 } hover:border-primary-500/30`}
               >
                 <div className="flex flex-col md:flex-row md:items-start gap-6">
-                  {/* Icon */}
                   {edu.isPrimary && (
                     <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center flex-shrink-0 shadow-lg shadow-primary-500/20 hidden sm:flex">
                       <GraduationCap className="w-8 h-8 text-white" />
@@ -142,7 +140,7 @@ const Education = () => {
                         </div>
                         <div className="mt-1">
                           <span className={`px-3 py-1.5 rounded-full border text-sm font-bold ${
-                            edu.isPrimary 
+                            edu.isPrimary
                               ? 'bg-green-500/15 border-green-500/30 text-green-400'
                               : 'bg-accent-500/15 border-accent-500/30 text-accent-400'
                           }`}>
@@ -157,9 +155,7 @@ const Education = () => {
                         <h4 className="font-semibold text-dark-300 text-sm mb-3">Relevant Coursework</h4>
                         <div className="flex flex-wrap gap-2">
                           {edu.coursework.map((course, idx) => (
-                            <span key={idx} className="tech-pill">
-                              {course}
-                            </span>
+                            <span key={idx} className="tech-pill">{course}</span>
                           ))}
                         </div>
                       </div>
@@ -170,7 +166,6 @@ const Education = () => {
             ))}
           </div>
 
-          {/* Certifications */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
